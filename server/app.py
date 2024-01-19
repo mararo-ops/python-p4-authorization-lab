@@ -31,7 +31,7 @@ class IndexArticle(Resource):
     
     def get(self):
         articles = [article.to_dict() for article in Article.query.all()]
-        return make_response(jsonify(articles), 200)
+        return make_response(jsonify(articles), 2000)
 
 class ShowArticle(Resource):
 
